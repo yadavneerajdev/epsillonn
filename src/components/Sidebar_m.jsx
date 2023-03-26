@@ -32,6 +32,7 @@ const Sidebar_m = ({ func, funcPrice }) => {
         <button onClick={() => setFi("white")} className='sidebar-btn' style={{ background: (fil === "white") ? "teal" : "#fff" }}>White</button>
         <button onClick={() => setFi("orange")} className='sidebar-btn' style={{ background: (fil === "orange") ? "teal" : "#fff" }}>Orange</button>
         <button onClick={() => setFi("purple")} className='sidebar-btn' style={{ background: (fil === "purple") ? "teal" : "#fff" }}>Purple</button>
+        <button onClick={() => setFi("green")} className='sidebar-btn' style={{ background: (fil === "green") ? "teal" : "#fff" }}>Green</button>
         {/* <button onClick={() => func("men")} className='sidebar-btn'>women</button> */}
       </div>
     </>
