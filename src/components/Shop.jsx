@@ -8,16 +8,16 @@ import { CartState } from './context/Context'
 
 const Shop = () => {
 
-  const {state:{products}} = CartState()
+  const { state: { products } } = CartState()
   console.log(products);
 
-  const [filter,setFilter] = useState("All");
+  const [filter, setFilter] = useState("");
 
   const getFilter = (e) => {
     setFilter(e);
   }
 
-  const [filterPrice,setFilterPrice] = useState(1000);
+  const [filterPrice, setFilterPrice] = useState(1000);
 
   const getFilterPrice = (e) => {
     setFilterPrice(e);
@@ -30,7 +30,7 @@ const Shop = () => {
         <Sidebar_m func={(e) => getFilter(e)} funcPrice={(e) => getFilterPrice(e)} />
       </div>
     </>
-    
+
   )
 }
 
